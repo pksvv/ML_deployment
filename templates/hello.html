@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Hello {{name}} !</h1>
+
+        <div class="login">
+            <h1>testing post</h1>
+        
+             <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('testpost')}}"method="post">
+                <input type="text" name="param1" placeholder="param1" required="required" />
+                <input type="text" name="param2" placeholder="param2" required="required" />        
+                <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+            </form>
+        
+           <br>
+           <br>
+           {{ submitted_values }}
+        
+         </div>
+    </body>
+</html>
